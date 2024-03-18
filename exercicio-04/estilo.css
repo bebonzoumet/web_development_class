@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+p {
+    font-family: "Six Caps", sans-serif;
+    font-size: x-large;
+    color: tomato;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#div-preta {
+    background-color: black;
+    min-height: 40px;
+}
+
+#div-relativo {
+    background-color: yellow;
+    min-height: 20vmin;
+}
+
+#cor-estranha {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    font-weight: bold;
+    background-color: lightblue;
+}
