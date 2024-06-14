@@ -1,0 +1,18 @@
+#body{
+    
+}
+
+#grid-login {
+    text-align: center;
+    grid-template-areas:
+    "a"
+    "b";
+}
+
+#divTitulo {
+    padding: 6.5em;
+}
+
+#divSenha {
+    padding: 6.5em;
+}

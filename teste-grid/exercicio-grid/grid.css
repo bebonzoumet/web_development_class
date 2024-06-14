@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
-    grid-template-areas: 
+    grid-template-areas:
     "preta preta x x"
     "preta preta x x"
     "o branca branca branca";
@@ -21,7 +21,7 @@
 
 @media only screen and (min-width: 1024px){
     #grid-container{
-        grid-template-areas: 
+        grid-template-areas:
         "preta preta preta preta"
         "x x x x"
         "branca branca branca branca";
