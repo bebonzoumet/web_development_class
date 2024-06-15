@@ -1,5 +1,7 @@
-const container = document.createElement('div');
-document.body.appendChild(container);
+const alvo_senha = "08dcf7d5e80b87a6b2f4fe01e74f4b2303719679b76e3e90f843310c6ffa91c6"
+
+// const container = document.createElement('div');
+// document.body.appendChild(container);
 
 
 
