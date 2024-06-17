@@ -1,3 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
 #grid-login {
     text-align: center;
     grid-template-areas:
@@ -5,16 +12,165 @@
     "b";
 }
 
-#divTitulo {
+#div-titulo {
     align-content: center;
     grid-area: a;
     height: 70vh;
 }
 
-#divSenha {
+#div-senha {
     align-content: center;
     grid-area: b;
     height: 0px;
+}
+
+#header-principal {
+    padding: 0.5em 1em;
+    background-color: #343a40;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#titulo-header {
+    margin: 0px;
+    flex-grow: 1;
+}
+
+#btn-sair {
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btn-sair:hover {
+    background-color: #c82333;
+}
+
+#div-botoes-principais {
+    display: none;
+    text-align: center;
+}
+
+#btn-masculino, #btn-feminino, #btn-all {
+    cursor: pointer;
+    height: 60px;
+    margin: 0em 1.5em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#btn-masculino:hover, #btn-feminino:hover, #btn-all:hover {
+    background-color: #0056b3;
+}
+
+#div-pesquisa {
+    text-align: center;
+    margin: 0.5em;
+}
+
+#pesquisa-nome {
+    line-height: 3em;
+    max-width: 80%;
+    width: 30em;
+    padding: 0.5em;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+#div-select {
+    display: block;
+    text-align: center;
+}
+
+#select-categoria {
+    padding: 2em 3em;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+#container-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.div-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "a1 a1"
+    "a4 a4"
+    "a2 a2"
+    "a3 a3";
+    border: 1px solid #ced4da;
+    padding: .3rem;
+    max-width: 324px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagem {
+    grid-area: a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-jogador {
+    object-position: 20% 20%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.posicao, .nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.posicao {
+    grid-area: a2;
+    color: #007bff;
+}
+
+.nome {
+    grid-area: a3;
+    color: #343a40;
+}
+
+.div-saiba-mais {
+    grid-area: a4;
+    text-align: center;
+    padding: 0.7em 0;
+}
+
+.btn-saiba-mais {
+    padding: 1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #218838;
 }
 
 @media only screen and (min-width: 768px){
@@ -25,19 +181,37 @@
         "a b";
     }
 
-    #divTitulo {
+    #div-titulo {
         align-content: center;
         grid-area: a;
         height: 90vh;
     }
 
-    #divSenha {
+    #div-senha {
         align-content: center;
         grid-area: b;
-        height: 90VH;
+        height: 90vh;
+    }
+
+    #div-select {
+        display: none;
+        text-align: center;
+    }
+
+    #div-botoes-principais {
+        display: block;
+        text-align: center;
+    }
+
+    #container-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media only screen and (min-width: 1024px){}
+@media only screen and (min-width: 1024px){
+    #container-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 @media only screen and (min-width: 1200px){}
